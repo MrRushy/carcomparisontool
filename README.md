@@ -1,6 +1,10 @@
 # Car Purchase Comparison Tool
 
-A Java console application that helps users compare vehicle ownership costs using factors such as purchase price, depreciation, sales tax, financing cost, and insurance. Originally developed as a Data Structures final project, the application demonstrates how core data structures can be applied to a practical cost-comparison problem.
+A **solo Java console application** for comparing vehicle ownership costs using factors such as purchase price, depreciation, sales tax, financing cost, and insurance. Originally developed in a **Data Structures course**, this tool demonstrates how core data structures and algorithms can be applied to a practical cost-comparison problem.
+
+## Overview
+
+Buying a car involves more than just comparing sticker prices. This application helps users evaluate and compare vehicles based on estimated ownership cost, making it easier to see how financing, taxes, depreciation, and insurance affect the total cost of ownership.
 
 ## Key Features
 
@@ -19,12 +23,12 @@ A Java console application that helps users compare vehicle ownership costs usin
 - Java
 - IntelliJ IDEA
 
-## Data Structures Used
+## Data Structures and Algorithms Used
 
-- **ArrayList** for monthly payment sorting
-- **LinkedList** for comparison history
-- **Queue** for processing car calculations in order
-- **HashMap** for organizing models by brand
+- **ArrayList** for sorting and displaying cars by monthly payment
+- **LinkedList** for storing comparison history
+- **Queue** for processing car calculations in insertion order
+- **HashMap** for organizing and searching models by brand
 - **Binary Search Tree** for ordering cars by estimated ownership cost
 - **Bubble Sort** for monthly payment comparison
 
@@ -55,12 +59,12 @@ The estimated ownership total is based on:
 - estimated finance cost
 - insurance over the loan term
 
-To avoid double-counting the vehicle price, the program displays total loan payments for reference but uses estimated finance cost in the ownership total instead of adding the full loan principal again.
+To avoid double-counting the vehicle price, the program displays total loan payments for reference but uses **estimated finance cost** in the ownership total instead of adding the full loan principal again.
 
 ## How to Run
 
 1. Open the project in IntelliJ IDEA or another Java IDE.
-2. Make sure the files are inside the `carcomparison` package.
+2. Make sure the source files are inside the `carcomparison` package.
 3. Compile and run `CarComparisonApp.java`.
 4. Use the console menu to enter cars and compare results.
 
@@ -83,15 +87,24 @@ This project highlights:
 - applied use of fundamental data structures
 - input validation and cleaner console-based UX
 
+It also shows how data structures can be used in a project with a real-world decision-making use case rather than only in isolated academic exercises.
+
 ## Improvements from the Initial Version
 
 - Refactored into separate Java files with cleaner class names
 - Improved cost-calculation consistency
 - Replaced misleading variable names
-- Improved Scanner and input handling
+- Improved `Scanner` and input handling
 - Added safer brand/model parsing
 - Formatted currency output more cleanly
 - Fixed history restore behavior
+
+## What I Learned
+
+- How to apply core data structures to a practical Java application
+- How to organize logic across multiple classes instead of one large file
+- How to improve input validation and overall program reliability
+- How to design comparison features around a real-world decision problem
 
 ## Future Improvements
 
